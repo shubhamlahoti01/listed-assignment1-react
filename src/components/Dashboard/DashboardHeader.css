@@ -1,0 +1,24 @@
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  color: black;
+}
+.dashboard-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.dashboard-menu {
+  display: flex;
+  align-items: center;
+}
+.dashboard-menu > h1 {
+  display: flex;
+  align-items: center;
+  color: black;
+  padding-left: 20px;
+}
