@@ -24,3 +24,23 @@
   color: black;
   padding-left: 1rem;
 }
+.logout-div {
+  flex-direction: 'column';
+}
+/* --------------------- */
+@media screen and (max-width: 700px), screen and (max-height: 700px) {
+  .dashboard-header {
+    padding-bottom: 0.3rem;
+  }
+  .dashboard-title {
+    font-size: 0.6rem;
+    line-height: 0.7rem;
+  }
+  .dashboard-menu > h1 > svg {
+    padding-left: 0.75rem;
+    size: 2rem;
+  }
+  .dashboard-menu img {
+    width: 6rem;
+  }
+}

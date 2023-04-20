@@ -50,3 +50,25 @@
   line-height: 0.95rem;
   color: #999999;
 }
+@media screen and (max-width: 700px), screen and (max-height: 700px) {
+  .todays-schedule-header > h1 {
+    font-size: 0.65rem;
+    line-height: 1rem;
+  }
+  .see-all h1 {
+    font-size: 0.5rem;
+    line-height: 0.7rem;
+  }
+  .schedule {
+    margin: 0.3rem;
+    padding-left: 0.4rem;
+  }
+  .schedule h1 {
+    font-size: 0.6rem;
+    line-height: 0.75rem;
+  }
+  .schedule h2 {
+    font-size: 0.45rem;
+    line-height: 0.75rem;
+  }
+}

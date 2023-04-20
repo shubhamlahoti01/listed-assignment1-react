@@ -37,15 +37,16 @@ const DashboardHeader = () => {
         >
           <BiUserCircle size={25} />
           <div
+            className='logout-div'
             style={{
               display: `${showMenu ? 'flex' : 'none'}`,
-              flexDirection: 'column',
               position: 'absolute',
               top: '1.25rem',
               right: '0.5rem',
             }}
           >
             <button
+              className='logout-btn'
               style={{
                 border: '1px solid black',
                 backgroundColor: 'white',

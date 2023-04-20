@@ -72,6 +72,7 @@
 }
 
 /* ----------------------------------- */
+
 .graph {
   display: flex;
   flex-direction: column;
@@ -80,7 +81,6 @@
 
   height: 40%;
   padding-top: 10px;
-  /* border: 2px solid rebeccapurple; */
 }
 
 .graph-headings {
@@ -137,11 +137,12 @@
 }
 .chart {
   height: 80%;
-  /* border: 2px solid green; */
+
   padding-right: 1rem;
   display: flex;
   justify-content: flex-start;
 }
+/* ----------------- */
 
 /* --------------------third section ----------------------- */
 .third-section {
@@ -245,3 +246,58 @@
   padding: 20px;
 }
 /* -------------------------------- */
+
+@media screen and (max-width: 700px), screen and (max-height: 700px) {
+  .main-dashboard-div {
+    padding: 5px;
+  }
+  /* sidebar */
+  .sidebar {
+    padding: 20px;
+  }
+  .sidebar-title {
+    font-size: 1.2rem;
+  }
+  .sidebar-menu1 > h1 {
+    font-size: 0.5rem;
+  }
+  .sidebar-menu2 > h1 {
+    font-size: 0.3;
+  }
+  /* header */
+  .dashboard-page {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+  .top-products-section {
+    padding: 0.5rem;
+  }
+  .top-products-section-headings > h1 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .top-products-section-headings > h4 {
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .x-box {
+    height: 3rem;
+    width: 3rem;
+  }
+  .piechart-details-divs {
+    margin: 0.2rem 0 0.2rem 0;
+  }
+  .piechart-details-divs-head h1 {
+    font-size: 0.3;
+    line-height: 0.75;
+  }
+  .circle {
+    margin-right: 5px;
+  }
+  .piechart-details-divs-base {
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .todays-schedule-section {
+    padding: 10px;
+  }
+}

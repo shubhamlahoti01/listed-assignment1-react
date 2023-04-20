@@ -42,3 +42,16 @@
   line-height: 1.5rem;
   color: #000000;
 }
+/* ----------------------- */
+@media screen and (max-width: 700px), screen and (max-height: 700px) {
+  .tracker-card-name {
+    font-size: 0.4rem;
+  }
+  .tracker-card-amount {
+    font-size: 0.6rem;
+  }
+  .icon-div svg {
+    height: 10px;
+    width: 10px;
+  }
+}
