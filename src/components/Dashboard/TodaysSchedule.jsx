@@ -1,5 +1,5 @@
 import React from 'react';
-import './TodaysSchedule.css';
+import './DashboardCssfiles/TodaysSchedule.css';
 import { TbChevronRight } from 'react-icons/tb';
 
 // todays-schedule-section

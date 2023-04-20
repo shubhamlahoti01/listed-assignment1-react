@@ -63,20 +63,20 @@ const Dashboard = () => {
       <div className='sidebar'>
         <div className='sidebar-title'>Board.</div>
         <div className='sidebar-menu1'>
-          <h1>
-            <TbClockHour3 /> Dashboard
+          <h1 style={{ fontWeight: '700' }}>
+            <TbClockHour3 size={15} /> Dashboard
           </h1>
           <h1>
-            <MdOutlineLocalOffer /> Transaction
+            <MdOutlineLocalOffer size={15} /> Transaction
           </h1>
           <h1>
-            <TbCalendarTime /> Schedules
+            <TbCalendarTime size={15} /> Schedules
           </h1>
           <h1>
-            <BiUserCircle /> Users
+            <BiUserCircle size={15} /> Users
           </h1>
           <h1>
-            <AiOutlineSetting /> Settings
+            <AiOutlineSetting size={15} /> Settings
           </h1>
         </div>
         <div className='sidebar-menu2'>
@@ -146,6 +146,7 @@ const Dashboard = () => {
             </ResponsiveContainer>
           </div>
         </div>
+        {/* 
 
         <div className='third-section'>
           <div className='top-products-section'>
@@ -205,6 +206,7 @@ const Dashboard = () => {
             <TodaysSchedule />
           </div>
         </div>
+         */}
       </div>
     </div>
   );

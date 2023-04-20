@@ -1,10 +1,10 @@
 .main-dashboard-div {
   display: flex;
-  padding: 30px;
+  padding: 10px;
   height: 100%;
   width: 100%;
-  border: 2px solid red;
-  justify-content: space-between;
+  border: 2px solid pink;
+  justify-content: space-evenly;
 }
 
 .sidebar {
@@ -14,36 +14,37 @@
   width: 20%;
   border-radius: 20px;
   padding: 40px;
-  border: 2px solid chartreuse;
+  /* border: 2px solid chartreuse; */
 }
 .sidebar-title {
-  height: 10%;
-  display: flex;
-  align-items: center;
-  font-size: 36px;
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 700;
-  line-height: 43px;
-  padding-bottom: 20px;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  padding-bottom: 1rem;
 }
 .sidebar-menu1 {
-  /* border: 2px solid green; */
   height: 70%;
 }
 .sidebar-menu1 > h1 {
   display: flex;
   align-items: center;
 
+  font-family: 'Montserrat';
   font-style: normal;
-  padding-bottom: 40px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 0.6rem;
+  line-height: 1rem;
+  color: #ffffff;
+
+  padding-top: 1rem;
 }
+
 .sidebar-menu1 > h1 > svg {
-  margin-right: 15px;
+  margin-right: 0.5rem;
 }
 .sidebar-menu2 {
-  /* border: 2px solid pink; */
   height: 20%;
   display: flex;
   flex-direction: column;
@@ -51,34 +52,37 @@
 }
 .sidebar-menu2 > h1 {
   padding-bottom: 20px;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.5rem;
+  line-height: 0.25rem;
+  color: #ffffff;
 }
 
 /* --------------------dashboard css-------------------- */
 
 .dashboard-page {
   width: 75%;
-  padding: 20px 60px 20px 60px;
+  padding: 1rem 1.5rem 1rem 1.5rem;
   display: flex;
   flex-direction: column;
   height: 100%;
-  border: 2px solid rebeccapurple;
-}
-.graph {
-  border-radius: 20px;
-  background-color: #ffffff;
-  min-height: 35%;
-  margin: 25px 0 25px 0;
-  /* border: 2px solid red; */
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
+  border: 2px solid red;
 }
 
 /* ----------------------------------- */
+.graph {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #ffffff;
+
+  height: 40%;
+  padding: 10px;
+  border: 2px solid rebeccapurple;
+}
+
 .graph-headings {
   display: flex;
   width: 100%;
@@ -93,8 +97,8 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 0.7rem;
+  line-height: 1rem;
   color: #000000;
 }
 .graph-headings-left h2 {
@@ -103,8 +107,8 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.5rem;
+  line-height: 0.75rem;
   color: #858585;
 }
 .chart-vars-divs {
@@ -113,15 +117,16 @@
 }
 .chart-vars {
   display: flex;
-  margin: 0 10px 0 10px;
+  margin: 0 0.25rem 0.25rem;
   align-items: center;
+  /* border: 2px solid greenyellow; */
 }
 .chart-vars h1 {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.6rem;
+  line-height: 0.75rem;
   color: #000000;
 }
 .circle {
@@ -136,6 +141,8 @@
   display: flex;
   align-items: flex-end;
 }
+
+/* --------------------third section ----------------------- */
 .third-section {
   height: 40%;
   display: flex;
@@ -232,18 +239,3 @@
   padding: 20px;
 }
 /* -------------------------------- */
-
-@media screen and (max-width: 1200px) {
-  .dashboard-page {
-    padding: 10px 30px 10px 30px;
-    width: 78%;
-  }
-  .main-dashboard-div {
-    padding: 20px;
-  }
-}
-@media screen and (max-width: 950px) {
-  .tracker-card-name {
-    font-size: 70%;
-  }
-}

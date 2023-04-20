@@ -9,7 +9,7 @@ const TrackerContainer = ({ name, Icon, amount, bckcolor }) => {
   return (
     <div className='tracker-card' style={{ backgroundColor: `${bckcolor}` }}>
       <div className='icon-div'>
-        <Icon size={25} />
+        <Icon size={15} />
       </div>
       <h1 className='tracker-card-name'>{name}</h1>
       <span className='tracker-card-amount'>{amount}</span>

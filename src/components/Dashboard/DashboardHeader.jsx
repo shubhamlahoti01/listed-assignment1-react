@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './DashboardHeader.css';
+import './DashboardCssfiles/DashboardHeader.css';
 import { IoMdNotificationsOutline } from 'react-icons/io';
 import { BiUserCircle } from 'react-icons/bi';
 import searchBar from '../../images/Search bar.png';
