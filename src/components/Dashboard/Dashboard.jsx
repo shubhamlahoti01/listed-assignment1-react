@@ -98,14 +98,14 @@ const Dashboard = () => {
             <div className='chart-vars-divs'>
               <div className='chart-vars'>
                 <div
-                  className='circle'
+                  className='circle-mention'
                   style={{ backgroundColor: '#E9A0A0' }}
                 ></div>
                 <h1>Guest</h1>
               </div>
               <div className='chart-vars'>
                 <div
-                  className='circle'
+                  className='circle-mention'
                   style={{ backgroundColor: '#9bdd7c' }}
                 ></div>
                 <h1>User</h1>
@@ -113,8 +113,8 @@ const Dashboard = () => {
             </div>
           </div>
           <div className='chart'>
-            <ResponsiveContainer width={'100%'} height={'100%'}>
-              <LineChart data={values} width={1700} height={300}>
+            <ResponsiveContainer minHeight={'100%'} minWidth={'100%'}>
+              <LineChart data={values}>
                 <Line
                   type='monotone'
                   dataKey={'guest'}
@@ -130,7 +130,12 @@ const Dashboard = () => {
                   dot={false}
                 />
                 <CartesianGrid stroke='#EAEAEA' vertical={false} />
-                <XAxis tick={false} xAxisId={'0'} dataKey={'name'} />
+                <XAxis
+                  hide={true}
+                  tick={false}
+                  xAxisId={'0'}
+                  dataKey={'name'}
+                />
                 <XAxis
                   // tick={false}
                   axisLine={false}
@@ -141,12 +146,10 @@ const Dashboard = () => {
                 />
                 <YAxis color='#858585' />
                 <Tooltip />
-                {/* <Legend /> */}
               </LineChart>
             </ResponsiveContainer>
           </div>
         </div>
-        {/* 
 
         <div className='third-section'>
           <div className='top-products-section'>
@@ -162,9 +165,6 @@ const Dashboard = () => {
                 <div
                   className='x-box'
                   style={{
-                    height: '145px',
-                    width: '145px',
-                    borderRadius: '50%',
                     background: `
     repeating-conic-gradient(
     from 15deg,
@@ -188,8 +188,8 @@ const Dashboard = () => {
                           className='circle'
                           style={{
                             backgroundColor: `${item.clr}`,
-                            height: '11px',
-                            width: '11px',
+                            height: '7px',
+                            width: '7px',
                             borderRadius: '50%',
                           }}
                         ></div>
@@ -206,7 +206,6 @@ const Dashboard = () => {
             <TodaysSchedule />
           </div>
         </div>
-         */}
       </div>
     </div>
   );

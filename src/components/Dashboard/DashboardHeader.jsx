@@ -41,10 +41,23 @@ const DashboardHeader = () => {
               display: `${showMenu ? 'flex' : 'none'}`,
               flexDirection: 'column',
               position: 'absolute',
-              top: '100%',
+              top: '1.25rem',
+              right: '0.5rem',
             }}
           >
-            <button onClick={logoutUser}>Logout</button>
+            <button
+              style={{
+                border: '1px solid black',
+                backgroundColor: 'white',
+                padding: '0 0.5rem',
+                zIndex: 1,
+                borderRadius: '10px',
+                fontWeight: 'bold',
+              }}
+              onClick={logoutUser}
+            >
+              Logout
+            </button>
           </div>
         </h1>
       </div>

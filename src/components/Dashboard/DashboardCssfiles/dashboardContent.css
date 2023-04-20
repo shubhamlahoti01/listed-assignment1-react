@@ -1,7 +1,7 @@
 .dashboard-content {
   display: flex;
   height: 20%;
-  border: 2px solid rgb(78, 91, 91);
+  /* border: 2px solid rgb(78, 91, 91); */
 }
 .dashboard-tracker {
   display: flex;
